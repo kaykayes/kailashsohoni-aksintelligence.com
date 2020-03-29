@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  firstblazorapp:
+    image: ${DOCKER_REGISTRY-}firstblazorapp
+    build:
+      context: .
+      dockerfile: FirstBlazorApp/Dockerfile
